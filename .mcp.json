@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "trivis": {
+    "Trivis": {
       "type": "http",
       "url": "https://ai-api.trivis.ee/mcp"
     }
