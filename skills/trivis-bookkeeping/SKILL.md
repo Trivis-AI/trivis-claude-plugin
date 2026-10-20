@@ -64,7 +64,11 @@ company, they reconnect Trivis and choose it; there is no tool for switching.
 5. Post only on request with `confirm_invoice`. Send only on request with
    `send_invoice_email` or `send_invoice_einvoice` (`get_delivery_options`
    first). If a send fails or its outcome is unknown, say so and do not create
-   another invoice or resend on your own.
+   another invoice or resend on your own. A company may keep sending for
+   people: the tool then answers that the act is kept for people and names
+   the Members page. Say so, do not retry, and offer the public page or
+   Trivis itself instead; an organisation admin can allow assistants to send
+   there, under Kept for people.
 
 There is no other way to build or change a sales invoice here: the generic row tools
 are not offered to this plugin, so every draft goes through the editor tools above.
