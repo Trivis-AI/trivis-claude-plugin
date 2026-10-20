@@ -17,5 +17,10 @@
     "invoices",
     "vat",
     "estonia"
-  ]
+  ],
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://trivis.ee/en/mcp",
+  "supportUrl": "https://trivis.ee/contact",
+  "privacyPolicyUrl": "https://trivis.ee/en/privacy",
+  "termsOfServiceUrl": "https://trivis.ee/en/terms"
 }
