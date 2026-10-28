@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Trivis bookkeeping for Claude.",
-    "version": "1.0.0"
+    "version": "1.0.1"
   },
   "plugins": [
     {
@@ -14,7 +14,7 @@
       "displayName": "Trivis",
       "source": "./",
       "description": "Bookkeeping for one company in Trivis: sales invoices, purchase invoices, bank, VAT and reports, with review cards inside the conversation.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "category": "productivity"
     }
   ]

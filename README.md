@@ -34,7 +34,7 @@ documents. See the [privacy policy](https://trivis.ee/en/privacy) and the
 ## Contents
 
 - `.claude-plugin/plugin.json`: the plugin manifest.
-- `.mcp.json`: the Trivis connector, `https://ai-api.trivis.ee/mcp`.
+- `.mcp.json`: the Trivis connector, `https://ai-api.trivis.ee/mcp?surface=plugin` (the curated tool set; the plain `/mcp` URL serves the full catalogue).
 - `skills/trivis-bookkeeping/SKILL.md`: how Claude works in Trivis.
 
 The server behind the connector and the cards it renders are not in this

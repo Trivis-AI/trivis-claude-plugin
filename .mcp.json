@@ -2,7 +2,7 @@
   "mcpServers": {
     "Trivis": {
       "type": "http",
-      "url": "https://ai-api.trivis.ee/mcp"
+      "url": "https://ai-api.trivis.ee/mcp?surface=plugin"
     }
   }
 }
