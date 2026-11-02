@@ -26,9 +26,10 @@ Works in English and Estonian.
 ## What data it sends
 
 What you ask, and the text of documents you attach, goes to Trivis's API at
-`ai-api.trivis.ee` under your own account and nowhere else. Claude cannot hand
+`ai-api.trivis.ee` under your own account and nowhere else. A chat cannot hand
 files to Trivis, so the purchase batch card has a drop zone for the original
-documents. See the [privacy policy](https://trivis.ee/en/privacy) and the
+documents; Claude Code on your own machine posts them itself. See the
+[privacy policy](https://trivis.ee/en/privacy) and the
 [terms of service](https://trivis.ee/en/terms).
 
 ## Contents
