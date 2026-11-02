@@ -100,10 +100,14 @@ are not offered to this plugin, so every draft goes through the editor tools abo
    When this host gives you no file links for the attachments, read each
    document yourself and send its complete text, never a summary, as one
    entry of `documents` in the same `start_invoice_batch` call. Those drafts
-   have no original attached: the card says so, posting stays off for them,
-   and the person adds the originals through the card or an upload link
-   you ask for. Never post a draft made from text yourself, and never try
-   to fetch or post to an upload link on the person's behalf.
+   have no original attached, and posting stays off for them until it is.
+   If you hold the files yourself (a shell on the person's machine, as in
+   Claude Code), post each original to the batch's `upload_url` right away:
+   `curl -F "file=@<file>" <upload_url>`, one file per request; Trivis
+   matches each to its draft. If the post is refused, this host cannot
+   reach Trivis: say so, and the person drops the originals on the card or
+   on an upload link you ask for. Never post a draft made from text
+   yourself.
 2. The card follows the batch while files are being read. Do not call
    `get_invoice_batch` in a loop; call it when the person asks what the state
    is, or after you changed a draft. Tell them what needs attention from the
