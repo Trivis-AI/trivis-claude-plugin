@@ -43,6 +43,9 @@ company, they reconnect Trivis and choose it; there is no tool for switching.
    Products from the catalogue: `search_catalog_items`, then
    `get_catalog_item_prices` for the unit price, and pass `item_id`. Generate a
    fresh UUID as `idempotency_key`; reuse it only to retry that exact call.
+   A pakkumine (a quote) or a saateleht is the same draft with `document_type`
+   offer or waybill: pass it here when the user asks for one, or change it
+   later in the header.
    Dates and the payment term: pass what the user said, otherwise leave them
    out. Trivis then dates the invoice today, applies the company's default
    payment term and counts the due date from the invoice date. Never invent a
@@ -61,7 +64,9 @@ company, they reconnect Trivis and choose it; there is no tool for switching.
    waybill) or a tax rate the user names by hand take their ids from
    `get_invoice_options`, read once per session. Leave the tax rate to Trivis
    unless the user names one. `sort_order` on a row changes its place.
-5. Post only on request with `confirm_invoice`. Send only on request with
+5. Post only on request with `confirm_invoice`; for an offer or a waybill it
+   only assigns the number from its own series and the draft stays editable,
+   nothing is posted. Send only on request with
    `send_invoice_email` or `send_invoice_einvoice` (`get_delivery_options`
    first). If a send fails or its outcome is unknown, say so and do not create
    another invoice or resend on your own. A company may not have switched on
